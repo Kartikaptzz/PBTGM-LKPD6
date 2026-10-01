@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ekstrakurikuler SMKN Tengaran</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#beranda" class="logo">
+    <img src="smkn_tngrn-removebg-preview.png" alt="Logo sekolah" class="logo-img">SMK<span> Negeri Tengaran</span></a>
+    <div class="menu">
+      <a href="#beranda">Beranda</a>
+      <a href="#ekstrakurikuler">Ekstrakurikuler</a>
+      <a href="#daftar">Daftar</a>
+    </div>
+  </nav>
+
+  <!-- BERANDA: SLIDER 3 -->
+  <header id="beranda" class="slider">
+    <div class="slide active s1">
+      <h1>Temukan Bakatmu di Sekolah</h1>
+      <p>15 ekstrakurikuler menunggumu, dari olahraga sampai seni dan organisasi.</p>
+      <a class="btn" href="#ekstrakurikuler">Lihat ekstrakurikuler</a>
+    </div>
+    <div class="slide s2">
+      <h1>Tumbuh Bersama Teman Baru</h1>
+      <p>Latihan rutin, lomba antar sekolah, dan pengalaman yang tidak ada di kelas.</p>
+      <a class="btn" href="#ekstrakurikuler">Kenali ekskulnya</a>
+    </div>
+    <div class="slide s3">
+      <h1>Pendaftaran Dibuka Sekarang</h1>
+      <p>Isi formulir online dalam semenit, lalu tunggu kabar dari pembina.</p>
+      <a class="btn" href="#daftar">Daftar sekarang</a>
+    </div>
+    <button class="arrow prev" id="prev" aria-label="Slide sebelumnya">&#10094;</button>
+    <button class="arrow next" id="next" aria-label="Slide berikutnya">&#10095;</button>
+    <div class="dots" id="dots"></div>
+  </header>
+
+  <!-- DAFTAR EKSKUL -->
+  <section id="ekstrakurikuler" class="section">
+    <h2>Ekstrakurikuler yang ada di SMKN Tengaran</h2>
+    <p class="sub">Pilihlah yang paling cocok dengan minatmu.</p>
+    <div class="grid" id="daftarEkskul"></div>
+  </section>
+
+  <!-- FORM -->
+  <section id="daftar" class="section form-section">
+    <main class="card">
+      <h2>Pendaftaran Anggota Baru</h2>
+      <p class="sub">Isi data di bawah untuk bergabung.</p>
+
+      <form id="formDaftar" novalidate>
+        <div class="field">
+          <label for="nama">Nama lengkap</label>
+          <input type="text" id="nama" name="nama" placeholder="Contoh: Budi Santoso" autocomplete="name">
+          <small class="error" id="namaError"></small>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email">
+          <small class="error" id="emailError"></small>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" autocomplete="new-password">
+          <small class="error" id="passwordError"></small>
+        </div>
+        <div class="field">
+          <label for="konfirmasi">Konfirmasi password</label>
+          <input type="password" id="konfirmasi" name="konfirmasi" placeholder="Ulangi password" autocomplete="new-password">
+          <small class="error" id="konfirmasiError"></small>
+        </div>
+        <div class="field">
+          <label for="ekskul">Pilihan ekstrakurikuler</label>
+          <select id="ekskul" name="ekskul">
+            <option value="">-- Pilih ekstrakurikuler --</option>
+          </select>
+          <small class="error" id="ekskulError"></small>
+        </div>
+        <button type="submit" class="btn full">Daftar sekarang</button>
+        <p class="success" id="pesanSukses" role="status"></p>
+      </form>
+    </main>
+  </section>
+
+  <footer class="footer">
+    <div class="foot-grid">
+      <div>
+        <strong>SMK Negeri Tengaran</strong>
+        <p>Wadah pengembangan bakat dan karakter siswa di luar jam pelajaran.</p>
+      </div>
+      <div>
+        <strong>Menu</strong>
+        <p><a href="#beranda">Beranda</a><br><a href="#ekstrakurikuler">Ekstrakurikuler</a><br><a href="#daftar">Daftar</a></p>
+      </div>
+      <div>
+        <strong>Kontak</strong>
+        <p>Instagram : @SMKN Tengaran <br>Tik Tok : @SMKN Tengaran</p>
+      </div>
+    </div>
+    <p class="copy">&copy; 2026 SMKN Tengaran. LKPD 6 PBTGM.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
